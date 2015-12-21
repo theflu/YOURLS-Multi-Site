@@ -6,10 +6,10 @@
  * Notepad on Windows. Make sure there is no character before the opening <?php at the beginning of this file.
  */
  
- // Database name prefix
- $dbprefix = 'yourls_';
+// Database name prefix
+$dbprefix = 'yourls_';
  
- // Domains for YOURLs sites
+// Domains for YOURLs sites
 $allowed_hosts = array('example.com', 'test.com');
 
 if (!isset($_SERVER['HTTP_HOST']) || !in_array($_SERVER['HTTP_HOST'], $allowed_hosts)) {
@@ -17,7 +17,6 @@ if (!isset($_SERVER['HTTP_HOST']) || !in_array($_SERVER['HTTP_HOST'], $allowed_h
 } else {
 	$domain = $_SERVER['HTTP_HOST'];
 	$dbname = $dbprefix.$domain;
-	
 }
 
 /*
